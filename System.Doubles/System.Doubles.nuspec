@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>Articulate</authors>
+    <owners>Articulate</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A library of interface doubles to be used in place of .NET Framework types</description>
+  </metadata>
+</package>
