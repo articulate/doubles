@@ -8,6 +8,14 @@ assembly_info:
   assembly_version: '{version}'
   assembly_file_version: '{version}'
   assembly_informational_version: '{version}'
+environment:
+  strong_name_secret:
+    secure: aENMghJNRZX34pkCa7iU53Sd438em4NMPOsFF17rnW0=
+install:
+- ps: >-
+    nuget install secure-file -ExcludeVersion
+
+    secure-file\tools\secure-file -decrypt Articulate.snk.enc -secret %strong_name_secret%
 build:
   publish_nuget: true
   publish_nuget_symbols: true
