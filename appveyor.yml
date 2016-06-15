@@ -22,7 +22,7 @@ build:
   parallel: true
   verbosity: minimal
 artifacts:
-- path: '**\*.nupkg'
+- path: '**\System.Doubles.*.nupkg'
 deploy:
 - provider: NuGet
   api_key:
