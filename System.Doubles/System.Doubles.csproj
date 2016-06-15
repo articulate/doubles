@@ -29,6 +29,8 @@
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>$(SolutionDir)Articulate.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="PresentationCore" />
@@ -116,6 +118,5 @@
     <Compile Include="Xml\Serialization\XmlSerializerWrapper.cs" />
     <Compile Include="Xml\XmlTextWriterWrapper.cs" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
