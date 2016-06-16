@@ -9,6 +9,16 @@
             this.dispatcher = dispatcher;
         }
 
+        public bool CheckAccess()
+        {
+            return dispatcher.CheckAccess();
+        }
+
+        public DispatcherOperation BeginInvoke(Delegate method, params object[] args)
+        {
+            return dispatcher.BeginInvoke(method, args);
+        }
+
         public void Invoke(Action callback)
         {
             dispatcher.Invoke(callback);
