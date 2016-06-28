@@ -50,11 +50,9 @@
     <Compile Include="ConsoleWrapper.cs" />
     <Compile Include="DateTimeOffsetWrapper.cs" />
     <Compile Include="Diagnostics\DebuggerWrapper.cs" />
-    <Compile Include="Diagnostics\DebugWrapper.cs" />
     <Compile Include="Diagnostics\EventLogEntryWrapper.cs" />
     <Compile Include="Diagnostics\FileVersionInfoFactory.cs" />
     <Compile Include="Diagnostics\FileVersionInfoWrapper.cs" />
-    <Compile Include="Diagnostics\IDebug.cs" />
     <Compile Include="Diagnostics\IDebugger.cs" />
     <Compile Include="Diagnostics\IEventLogEntry.cs" />
     <Compile Include="Diagnostics\IFileVersionInfo.cs" />
