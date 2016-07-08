@@ -7,6 +7,11 @@ namespace System.IO
             return Path.GetFileName(path);
         }
 
+        public string GetFileNameWithoutExtension(string path)
+        {
+            return Path.GetFileNameWithoutExtension(path);
+        }
+
         public string GetExtension(string path)
         {
             return Path.GetExtension(path);
