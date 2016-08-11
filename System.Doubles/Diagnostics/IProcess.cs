@@ -7,6 +7,11 @@
             get;
         }
 
+        IntPtr MainWindowHandle
+        {
+            get;
+        }
+
         bool Start();
 
         void WaitForExit();
