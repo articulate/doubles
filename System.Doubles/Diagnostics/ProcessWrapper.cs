@@ -4,6 +4,8 @@
     {
         public int ExitCode => process.ExitCode;
 
+        public IntPtr MainWindowHandle => process.MainWindowHandle;
+
         private readonly Process process;
 
         public ProcessWrapper(Process process)
