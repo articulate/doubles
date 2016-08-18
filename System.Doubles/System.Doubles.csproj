@@ -106,7 +106,9 @@
     <Compile Include="Windows\Forms\IClipboard.cs" />
     <Compile Include="Windows\Forms\IControl.cs" />
     <Compile Include="Windows\Forms\INotifyIcon.cs" />
+    <Compile Include="Windows\Forms\IScreen.cs" />
     <Compile Include="Windows\Forms\NotifyIconWrapper.cs" />
+    <Compile Include="Windows\Forms\ScreenWrapper.cs" />
     <Compile Include="Windows\IApplication.cs" />
     <Compile Include="Windows\IClipboard.cs" />
     <Compile Include="Windows\Threading\DispatcherWrapper.cs" />
