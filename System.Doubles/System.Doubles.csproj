@@ -59,6 +59,8 @@
     <Compile Include="Diagnostics\IFileVersionInfoFactory.cs" />
     <Compile Include="Diagnostics\IProcess.cs" />
     <Compile Include="Diagnostics\IProcessFactory.cs" />
+    <Compile Include="Diagnostics\IProcessModule.cs" />
+    <Compile Include="Diagnostics\ProcessModuleWrapper.cs" />
     <Compile Include="Diagnostics\ProcessWrapper.cs" />
     <Compile Include="Diagnostics\ProcessFactory.cs" />
     <Compile Include="EnvironmentWrapper.cs" />

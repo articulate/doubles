@@ -4,11 +4,17 @@
     {
         public int ExitCode => process.ExitCode;
 
+        public IProcessModule MainModule => mainModule.Value;
+
+        private readonly Lazy<IProcessModule> mainModule;
+
         private readonly Process process;
 
         public ProcessWrapper(Process process)
         {
             this.process = process;
+
+            mainModule = new Lazy<IProcessModule>(() => new ProcessModuleWrapper(process.MainModule));
         }
 
         public void Dispose()

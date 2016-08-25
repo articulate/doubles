@@ -7,6 +7,11 @@
             get;
         }
 
+        IProcessModule MainModule
+        {
+            get;
+        }
+
         bool Start();
 
         void WaitForExit();
