@@ -88,6 +88,8 @@
     <Compile Include="NativeMethods.cs" />
     <Compile Include="Net\Http\HttpContentWrapper.cs" />
     <Compile Include="Net\Http\IHttpContent.cs" />
+    <Compile Include="Net\NetworkInformation\INetworkInterface.cs" />
+    <Compile Include="Net\NetworkInformation\NetworkInterfaceWrapper.cs" />
     <Compile Include="OperatingSystemWrapper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Runtime\Serialization\ISerializationInfo.cs" />
