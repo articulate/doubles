@@ -86,7 +86,9 @@
     <Compile Include="Microsoft\Win32\RegistryWrapper.cs" />
     <Compile Include="Microsoft\Win32\RegistryKeyWrapper.cs" />
     <Compile Include="NativeMethods.cs" />
+    <Compile Include="Net\Http\HttpClientWrapper.cs" />
     <Compile Include="Net\Http\HttpContentWrapper.cs" />
+    <Compile Include="Net\Http\IHttpClient.cs" />
     <Compile Include="Net\Http\IHttpContent.cs" />
     <Compile Include="Net\NetworkInformation\INetworkInterface.cs" />
     <Compile Include="Net\NetworkInformation\NetworkInterfaceWrapper.cs" />
