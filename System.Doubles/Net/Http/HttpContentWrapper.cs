@@ -14,9 +14,6 @@ namespace System.Net.Http
             this.httpContent = httpContent;
         }
 
-        public Task<Stream> ReadAsStreamAsync()
-        {
-            return httpContent.ReadAsStreamAsync();
-        }
+        public Task<Stream> ReadAsStreamAsync() => httpContent.ReadAsStreamAsync();
     }
 }
