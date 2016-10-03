@@ -28,6 +28,10 @@ namespace System.Net.Http
 
         public void Dispose() => httpRequestMessage.Dispose();
 
+        public override bool Equals(object obj) => httpRequestMessage.Equals(obj);
+
+        public override int GetHashCode() => httpRequestMessage.GetHashCode();
+
         public override string ToString() => httpRequestMessage.ToString();
     }
 }
