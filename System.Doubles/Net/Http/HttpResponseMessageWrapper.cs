@@ -32,7 +32,12 @@
 
         public void Dispose() => httpResponseMessage.Dispose();
 
-        public override bool Equals(object obj) => httpResponseMessage.Equals(obj);
+        public override bool Equals(object obj)
+        {
+            var other = obj as HttpResponseMessageWrapper;
+
+            return httpResponseMessage.Equals(other != null ? other.httpResponseMessage : obj);
+        }
 
         public override int GetHashCode() => httpResponseMessage.GetHashCode();
 
