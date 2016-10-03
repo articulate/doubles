@@ -32,6 +32,10 @@
 
         public void Dispose() => httpResponseMessage.Dispose();
 
+        public override bool Equals(object obj) => httpResponseMessage.Equals(obj);
+
+        public override int GetHashCode() => httpResponseMessage.GetHashCode();
+
         public override string ToString() => httpResponseMessage.ToString();
     }
 }
