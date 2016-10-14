@@ -2,6 +2,11 @@ namespace System.IO
 {
     public sealed class PathWrapper : IPath
     {
+        public string GetDirectoryName(string path)
+        {
+            return Path.GetDirectoryName(path);
+        }
+
         public string GetFileName(string path)
         {
             return Path.GetFileName(path);
