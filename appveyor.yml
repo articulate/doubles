@@ -16,6 +16,8 @@ install:
     nuget install secure-file -ExcludeVersion
 
     secure-file\tools\secure-file -decrypt .\Articulate.snk.enc -secret $($env:strong_name_secret)
+nuget:
+  disable_publish_on_pr: true
 build:
   publish_nuget: true
   publish_nuget_symbols: true
