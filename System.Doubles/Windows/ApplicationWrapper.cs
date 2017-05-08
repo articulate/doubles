@@ -17,5 +17,10 @@ namespace System.Windows
         }
 
         public Window MainWindow => Application.Current.MainWindow;
+
+        public void Shutdown(int exitCode)
+        {
+            Application.Current.Shutdown(exitCode);
+        }
     }
 }

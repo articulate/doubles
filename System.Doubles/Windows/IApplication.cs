@@ -10,5 +10,7 @@ namespace System.Windows
         {
             get;
         }
+
+        void Shutdown(int exitCode);
     }
 }
