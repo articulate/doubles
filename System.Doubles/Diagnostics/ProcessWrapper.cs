@@ -6,6 +6,8 @@
 
         public IProcessModule MainModule => mainModule.Value;
 
+        public bool HasExited => process.HasExited;
+
         private readonly Lazy<IProcessModule> mainModule;
 
         private readonly Process process;

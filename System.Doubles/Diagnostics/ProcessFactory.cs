@@ -15,5 +15,10 @@ namespace System.Diagnostics
         {
             return new ProcessWrapper(new Process {StartInfo = processStartInfo});
         }
+
+        public IProcess GetByProcessId(int processId)
+        {
+            return new ProcessWrapper(Process.GetProcessById(processId));
+        }
     }
 }

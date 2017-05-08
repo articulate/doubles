@@ -12,6 +12,11 @@
             get;
         }
 
+        bool HasExited
+        {
+            get;
+        }
+
         bool Start();
 
         void WaitForExit();

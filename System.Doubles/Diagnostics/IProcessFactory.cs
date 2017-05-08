@@ -7,5 +7,7 @@ namespace System.Diagnostics
         IEnumerable<IProcess> Get(string filePath);
 
         IProcess Create(ProcessStartInfo processStartInfo);
+
+        IProcess GetByProcessId(int processid);
     }
 }
