@@ -71,5 +71,10 @@
         {
             return File.Open(path, mode, access, share);
         }
+
+        public DateTime FileGetLastWriteTimeUtc(string path)
+        {
+            return File.GetLastWriteTimeUtc(path);
+        }
     }
 }
