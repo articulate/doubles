@@ -29,5 +29,7 @@
         string FileReadAllText(string path);
 
         Stream FileOpen(string path, FileMode mode, FileAccess access, FileShare share);
+
+        DateTime FileGetLastWriteTimeUtc(string path);
     }
 }
