@@ -2,6 +2,10 @@
 {
     public interface IProcess : IDisposable
     {
+        event DataReceivedEventHandler OutputDataReceived;
+
+        event DataReceivedEventHandler ErrorDataReceived;
+
         int ExitCode
         {
             get;
@@ -22,5 +26,9 @@
         void WaitForExit();
 
         void Kill();
+
+        void BeginOutputReadLine();
+
+        void BeginErrorReadLine();
     }
 }

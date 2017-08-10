@@ -2,6 +2,30 @@
 {
     internal sealed class ProcessWrapper : IProcess
     {
+        public event DataReceivedEventHandler OutputDataReceived
+        {
+            add
+            {
+                process.OutputDataReceived += value;
+            }
+            remove
+            {
+                process.OutputDataReceived -= value;
+            }
+        }
+
+        public event DataReceivedEventHandler ErrorDataReceived
+        {
+            add
+            {
+                process.ErrorDataReceived += value;
+            }
+            remove
+            {
+                process.ErrorDataReceived -= value;
+            }
+        }
+
         public int ExitCode => process.ExitCode;
 
         public IProcessModule MainModule => mainModule.Value;
@@ -37,6 +61,16 @@
         public void Kill()
         {
             process.Kill();
+        }
+
+        public void BeginOutputReadLine()
+        {
+            process.BeginOutputReadLine();
+        }
+
+        public void BeginErrorReadLine()
+        {
+            process.BeginErrorReadLine();
         }
     }
 }
