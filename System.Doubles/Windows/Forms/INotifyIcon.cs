@@ -4,6 +4,7 @@ namespace System.Windows.Forms
     {
         event MouseEventHandler MouseClick;
         event EventHandler BalloonTipClicked;
+        event EventHandler BalloonTipClosed;
 
         bool Visible
         {
