@@ -81,8 +81,10 @@
     <Compile Include="IO\IFileSystem.cs" />
     <Compile Include="IO\IFileSystemInfo.cs" />
     <Compile Include="IO\IPath.cs" />
+    <Compile Include="IO\IStreamReader.cs" />
     <Compile Include="IO\IZipFile.cs" />
     <Compile Include="IO\PathWrapper.cs" />
+    <Compile Include="IO\StreamReaderWrapper.cs" />
     <Compile Include="IO\ZipFileWrapper.cs" />
     <Compile Include="Microsoft\Win32\IRegistry.cs" />
     <Compile Include="Microsoft\Win32\IRegistryKey.cs" />
