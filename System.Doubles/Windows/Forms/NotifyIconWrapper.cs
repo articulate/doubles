@@ -6,50 +6,32 @@ namespace System.Windows.Forms
     {
         public event MouseEventHandler MouseClick
         {
-            add
-            {
-                WrappedNotifyIcon.MouseClick += value;
-            }
-            remove
-            {
-                WrappedNotifyIcon.MouseClick -= value;
-            }
+            add => WrappedNotifyIcon.MouseClick += value;
+            remove => WrappedNotifyIcon.MouseClick -= value;
         }
 
         public event EventHandler BalloonTipClicked
         {
-            add
-            {
-                WrappedNotifyIcon.BalloonTipClicked += value;
-            }
-            remove
-            {
-                WrappedNotifyIcon.BalloonTipClicked -= value;
-            }
+            add => WrappedNotifyIcon.BalloonTipClicked += value;
+            remove => WrappedNotifyIcon.BalloonTipClicked -= value;
+        }
+
+        public event EventHandler BalloonTipClosed
+        {
+            add => WrappedNotifyIcon.BalloonTipClosed += value;
+            remove => WrappedNotifyIcon.BalloonTipClosed -= value;
         }
 
         public bool Visible
         {
-            get
-            {
-                return WrappedNotifyIcon.Visible;
-            }
-            set
-            {
-                WrappedNotifyIcon.Visible = value;
-            }
+            get => WrappedNotifyIcon.Visible;
+            set => WrappedNotifyIcon.Visible = value;
         }
 
         public ContextMenu ContextMenu
         {
-            get
-            {
-                return WrappedNotifyIcon.ContextMenu;
-            }
-            set
-            {
-                WrappedNotifyIcon.ContextMenu = value;
-            }
+            get => WrappedNotifyIcon.ContextMenu;
+            set => WrappedNotifyIcon.ContextMenu = value;
         }
 
         public NotifyIcon WrappedNotifyIcon
