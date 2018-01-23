@@ -31,5 +31,10 @@
         {
             get;
         }
+
+        IHttpResponseHeaders ResponseHeaders
+        {
+            get;
+        }
     }
 }
