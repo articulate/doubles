@@ -20,6 +20,11 @@
 
         public bool IsSuccessStatusCode => httpResponseMessage.IsSuccessStatusCode;
 
+        public IHttpResponseHeaders ResponseHeaders
+        {
+            get;
+        }
+
         private readonly HttpResponseMessage httpResponseMessage;
 
         public HttpResponseMessageWrapper(HttpResponseMessage httpResponseMessage)
@@ -28,6 +33,7 @@
 
             Content = httpResponseMessage.Content == null ? null : new HttpContentWrapper(httpResponseMessage.Content);
             RequestMessage = httpResponseMessage.RequestMessage == null ? null : new HttpRequestMessageWrapper(httpResponseMessage.RequestMessage);
+            ResponseHeaders = new HttpResponseHeadersWrapper(httpResponseMessage.Headers);
         }
 
         public void Dispose() => httpResponseMessage.Dispose();
