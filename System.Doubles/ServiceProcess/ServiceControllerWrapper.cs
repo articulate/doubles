@@ -9,6 +9,12 @@
             this.serviceController = serviceController;
         }
 
+        public string ServiceName => serviceController.ServiceName;
+
+        public string DisplayName => serviceController.DisplayName;
+
+        public ServiceControllerStatus Status => serviceController.Status;
+
         public void Start()
         {
             serviceController.Start();
@@ -17,6 +23,11 @@
         public void Stop()
         {
             serviceController.Stop();
+        }
+
+        public void Refresh()
+        {
+            serviceController.Refresh();
         }
 
         public void Dispose()
