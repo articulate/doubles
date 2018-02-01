@@ -35,6 +35,12 @@ namespace System.ServiceProcess
             set;
         }
 
+        string Description
+        {
+            get;
+            set;
+        }
+
         void Install(IDictionary stateSaver);
 
         void Uninstall(IDictionary savedState);
