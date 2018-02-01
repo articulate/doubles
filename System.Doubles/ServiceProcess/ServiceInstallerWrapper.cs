@@ -39,6 +39,12 @@ namespace System.ServiceProcess
             set => serviceInstaller.ServiceName = value;
         }
 
+        public string Description
+        {
+            get => serviceInstaller.Description;
+            set => serviceInstaller.Description = value;
+        }
+
         private IServiceProcessInstaller parent;
         private readonly ServiceInstaller serviceInstaller;
 
