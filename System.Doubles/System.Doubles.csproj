@@ -144,6 +144,10 @@
     <Compile Include="Windows\IClipboard.cs" />
     <Compile Include="Windows\Threading\DispatcherWrapper.cs" />
     <Compile Include="Windows\Threading\IDispatcher.cs" />
+    <Compile Include="Windows\Threading\IManualResetEvent.cs" />
+    <Compile Include="Windows\Threading\ITaskFactory.cs" />
+    <Compile Include="Windows\Threading\ManualResetEventWrapper.cs" />
+    <Compile Include="Windows\Threading\TaskFactoryWrapper.cs" />
     <Compile Include="Xml\IXmlTextWriter.cs" />
     <Compile Include="Xml\Serialization\IXmlSerializer.cs" />
     <Compile Include="Xml\Serialization\XmlSerializerWrapper.cs" />
