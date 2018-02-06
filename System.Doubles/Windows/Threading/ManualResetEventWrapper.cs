@@ -2,7 +2,7 @@
 
 namespace System.Windows.Threading
 {
-    internal class ManualResetEventWrapper : IManualResetEvent
+    public sealed class ManualResetEventWrapper : IManualResetEvent
     {
         private readonly ManualResetEvent manualResetEvent;
 
