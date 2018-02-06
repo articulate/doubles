@@ -1,6 +1,6 @@
 ﻿namespace System.Windows.Threading
 {
-    internal interface IManualResetEvent : IDisposable
+    public interface IManualResetEvent : IDisposable
     {
         void Set();
 
