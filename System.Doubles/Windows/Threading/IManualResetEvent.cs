@@ -4,6 +4,8 @@
     {
         void Set();
 
+        bool Reset();
+
         bool WaitOne();
     }
 }
