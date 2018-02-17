@@ -21,6 +21,11 @@ namespace System.Windows.Threading
             manualResetEvent.Set();
         }
 
+        public bool Reset()
+        {
+            return manualResetEvent.Reset();
+        }
+
         public bool WaitOne()
         {
             return manualResetEvent.WaitOne();
