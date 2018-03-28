@@ -6,5 +6,10 @@
         {
             Clipboard.SetText(text);
         }
+
+        public void SetDataObject(object data, bool copy)
+        {
+            Clipboard.SetDataObject(data, copy);
+        }
     }
 }
