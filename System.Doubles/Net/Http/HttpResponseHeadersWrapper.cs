@@ -4,6 +4,8 @@ namespace System.Net.Http
 {
     internal sealed class HttpResponseHeadersWrapper : IHttpResponseHeaders
     {
+        public EntityTagHeaderValue ETag => httpResponseHeaders.ETag;
+
         public Uri Location => httpResponseHeaders.Location;
 
         private readonly HttpResponseHeaders httpResponseHeaders;
