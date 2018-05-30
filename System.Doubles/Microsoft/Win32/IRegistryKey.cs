@@ -12,5 +12,7 @@ namespace Microsoft.Win32
         RegistryValueKind GetValueKind(string valueName);
 
         object GetValue(string valueName, object defaultValue);
+
+        void SetValue(string valueName, object value, RegistryValueKind registryValueKind);
     }
 }
