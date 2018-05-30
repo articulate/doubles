@@ -27,6 +27,18 @@ namespace Microsoft.Win32
             return subKey == null ? null : new RegistryKeyWrapper(subKey);
         }
 
+        public IRegistryKey OpenSubKey(string keyName, bool writeable)
+        {
+            var subKey = registryKey.OpenSubKey(keyName, writeable);
+            return subKey == null ? null : new RegistryKeyWrapper(subKey);
+        }
+
+        public IRegistryKey CreateSubKey(string keyName)
+        {
+            var subKey = registryKey.CreateSubKey(keyName);
+            return subKey == null ? null : new RegistryKeyWrapper(subKey);
+        }
+
         public RegistryValueKind GetValueKind(string valueName)
         {
             return registryKey.GetValueKind(valueName);
@@ -35,6 +47,11 @@ namespace Microsoft.Win32
         public object GetValue(string valueName, object defaultValue)
         {
             return registryKey.GetValue(valueName, defaultValue);
+        }
+
+        public void SetValue(string valueName, object value, RegistryValueKind registryValueKind)
+        {
+            registryKey.SetValue(valueName, value, registryValueKind);
         }
     }
 }
