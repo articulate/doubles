@@ -1,4 +1,6 @@
-﻿namespace System.Diagnostics
+﻿using System.IO;
+
+namespace System.Diagnostics
 {
     public interface IProcess : IDisposable
     {
@@ -17,6 +19,16 @@
         }
 
         bool HasExited
+        {
+            get;
+        }
+
+        IStreamReader StandardOutput
+        {
+            get;
+        }
+
+        IStreamReader StandardError
         {
             get;
         }
