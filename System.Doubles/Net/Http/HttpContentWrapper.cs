@@ -7,6 +7,8 @@ namespace System.Net.Http
     {
         public long? Length => httpContent.Headers.ContentLength;
 
+        public string ContentType => httpContent.Headers.ContentType?.MediaType;
+
         private readonly HttpContent httpContent;
 
         public HttpContentWrapper(HttpContent httpContent)

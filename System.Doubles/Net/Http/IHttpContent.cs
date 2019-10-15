@@ -10,6 +10,11 @@ namespace System.Net.Http
             get;
         }
 
+        string ContentType
+        {
+            get;
+        }
+
         Task<Stream> ReadAsStreamAsync();
     }
 }
