@@ -53,5 +53,15 @@ namespace Microsoft.Win32
         {
             registryKey.SetValue(valueName, value, registryValueKind);
         }
+
+        public void DeleteValue(string valueName, bool throwOnMissingValue)
+        {
+            registryKey.DeleteValue(valueName, throwOnMissingValue);
+        }
+
+        public void Close()
+        {
+            registryKey.Close();
+        }
     }
 }
